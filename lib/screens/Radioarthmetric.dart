@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyScreen extends StatefulWidget {
-  const MyScreen({super.key});
+class RadioArthmetric extends StatefulWidget {
+  const RadioArthmetric({super.key});
 
   @override
-  State<MyScreen> createState() => _MyScreenState();
+  State<RadioArthmetric> createState() => _RadioArthmetricState();
 }
 
-class _MyScreenState extends State<MyScreen> {
+class _RadioArthmetricState extends State<RadioArthmetric> {
   final _firstcontroller = TextEditingController();
   final _secondcontroller = TextEditingController();
 
@@ -75,6 +75,13 @@ class _MyScreenState extends State<MyScreen> {
             const SizedBox(
               height: 10,
             ),
+            RadioListTile(
+                title: const Text("Add"),
+                value: _firstcontroller.text,
+                groupValue: "Add",
+                onChanged: (value) {
+                  setState(() {});
+                }),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -92,19 +99,6 @@ class _MyScreenState extends State<MyScreen> {
             const SizedBox(
               height: 10,
             ),
-            SizedBox(
-              child: Text(
-                "Result: $result ",
-                style: const TextStyle(fontSize: 30),
-              ),
-            ), SizedBox(
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/siscreen");
-                },
-                child: const Text("Open Simple interest"),
-              ),
-            )
           ]),
         ),
       ),

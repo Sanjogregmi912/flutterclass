@@ -25,6 +25,7 @@ class _intrestState extends State<intrest> {
 
       result = ((value1 * value2 * value3) / 100);
     });
+    Navigator.pushNamed(context, '/arthmetricscreen', arguments: result);
   }
 
   @override
@@ -108,7 +109,8 @@ class _intrestState extends State<intrest> {
                 "Result: $result ",
                 style: const TextStyle(fontSize: 20),
               ),
-            )
+            ),
+           
           ]),
         ),
       ),
