@@ -8,26 +8,30 @@ class CardScreen extends StatefulWidget {
 }
 
 class _CardScreenState extends State<CardScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: SizedBox(
-        height: 200,
-        width: double.infinity,
-        child: Card(
-          color: Colors.amber,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-          child: const Center(
-            child: Text(
-              " I am inside a card",
-              style: TextStyle(
-                fontSize: 18,
-              ),
+  Widget _cardwidget(String title) {
+    return SizedBox(
+      height: 50,
+      width: double.infinity,
+      child: Card(
+        color: Colors.amber,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+        child: Center(
+          child: Text(
+            title,
+            style: const TextStyle(
+              fontSize: 18,
             ),
           ),
         ),
       ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Column(
+          children: [for (int i = 0; i <= 10; i++) _cardwidget("card $i")]),
     );
   }
 }
