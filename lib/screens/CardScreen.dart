@@ -30,8 +30,10 @@ class _CardScreenState extends State<CardScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Column(
-          children: [for (int i = 0; i <= 10; i++) _cardwidget("card $i")]),
+      child: SingleChildScrollView (
+        child: Column(
+            children: [for (int i = 0; i <= 10; i++) _cardwidget("card $i")]),
+      ),
     );
   }
 }

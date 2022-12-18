@@ -3,8 +3,10 @@ import 'package:myfirstproject/screens/CardScreen.dart';
 import 'package:myfirstproject/screens/ColumnScreen.dart';
 import 'package:myfirstproject/screens/ContainerScreen.dart';
 import 'package:myfirstproject/screens/DisplayStudent.dart';
+import 'package:myfirstproject/screens/DisplayTableScreen.dart';
 import 'package:myfirstproject/screens/FlexContainerScreen.dart';
 import 'package:myfirstproject/screens/FlexibleScreen.dart';
+import 'package:myfirstproject/screens/GridScreen.dart';
 import 'package:myfirstproject/screens/HomepageScreen.dart';
 import 'package:myfirstproject/screens/ImageScreen.dart';
 import 'package:myfirstproject/screens/Listtilescreen.dart';
@@ -12,6 +14,7 @@ import 'package:myfirstproject/screens/Radioarthmetric.dart';
 import 'package:myfirstproject/screens/Register_screen.dart';
 import 'package:myfirstproject/screens/SnackBarScreen.dart';
 import 'package:myfirstproject/screens/addition.dart';
+import 'package:myfirstproject/screens/calculator.dart';
 import './screens/Arthmetric.dart';
 import './screens/interest.dart';
 
@@ -35,7 +38,10 @@ void main(List<String> args) {
         '/snackbarscreen': (context) => const SnackBarScreen(),
         '/flexconatiner': (context) => const FlexContainer(),
         '/displayStudent' :(context) => const DisplayStudent(),
-        '/cardscreen' :(context) =>  const CardScreen()
+        '/cardscreen' :(context) =>  const CardScreen(),
+         '/gridscreen' :(context) =>  const GridScreen(),
+         '/calculator' :(context) => const Calculator(),
+         '/displaytable' :(context) => const DisplayTableScreen()
       },
     ),
   );

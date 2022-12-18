@@ -15,127 +15,162 @@ class _HomepageState extends State<Homepage> {
         title: const Text("Homepage"),
       ),
       body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Open Columns"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/columns");
-                },
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Open Columns"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/columns");
+                  },
+                ),
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Open Addition"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/addition");
-                },
+              const SizedBox(
+                height: 10,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Open Radio Arthmentric"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/radioarthmetric");
-                },
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Open Addition"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/addition");
+                  },
+                ),
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("list tile"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/listtilescreen");
-                },
+              const SizedBox(
+                height: 10,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Conatiner Screen"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/containerscreen");
-                },
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Open Radio Arthmentric"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/radioarthmetric");
+                  },
+                ),
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Iamge Screen"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/imagescreen");
-                },
+              const SizedBox(
+                height: 10,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Register Screen"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/registerscreen");
-                },
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("list tile"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/listtilescreen");
+                  },
+                ),
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Flexible Screen"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/flexiblescreen");
-                },
+              const SizedBox(
+                height: 10,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("Snack Bar"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/snackbarscreen");
-                },
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Conatiner Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/containerscreen");
+                  },
+                ),
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("flex Container"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/flexconatiner");
-                },
+              const SizedBox(
+                height: 10,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            SizedBox(
-              child: ElevatedButton(
-                child: const Text("card Screen"),
-                onPressed: () {
-                  Navigator.pushNamed(context, "/cardscreen");
-                },
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Iamge Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/imagescreen");
+                  },
+                ),
               ),
-            ),
-          ],
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Register Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/registerscreen");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Flexible Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/flexiblescreen");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Snack Bar"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/snackbarscreen");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("flex Container"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/flexconatiner");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("card Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/cardscreen");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Grid Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/gridscreen");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Calculator"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/calculator");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Table Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/displaytable");
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
