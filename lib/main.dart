@@ -12,6 +12,7 @@ import 'package:myfirstproject/screens/GridScreen.dart';
 import 'package:myfirstproject/screens/HomepageScreen.dart';
 import 'package:myfirstproject/screens/ImageScreen.dart';
 import 'package:myfirstproject/screens/Listtilescreen.dart';
+import 'package:myfirstproject/screens/LoginScreen.dart';
 import 'package:myfirstproject/screens/Radioarthmetric.dart';
 import 'package:myfirstproject/screens/Register_screen.dart';
 import 'package:myfirstproject/screens/SnackBarScreen.dart';
@@ -48,6 +49,7 @@ void main(List<String> args) {
          "/stackscreen" : (context) => const StackScreen(),
          "/buttomnavigation" :(context) => const ButtomNavigationScreen(),
          "/dashboard" :(context) => const Dashboard(),
+         "/loginscreen" :(context) => const LoginScreen()
       },
     ),
   );
