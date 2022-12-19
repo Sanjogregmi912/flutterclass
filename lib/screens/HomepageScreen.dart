@@ -169,6 +169,39 @@ class _HomepageState extends State<Homepage> {
                   },
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Stack Screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/stackscreen");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Buttom Naviagtion"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/buttomnavigation");
+                  },
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("dashboard"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/dashboard");
+                  },
+                ),
+              ),
             ],
           ),
         ),

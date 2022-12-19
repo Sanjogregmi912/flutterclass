@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstproject/bottom_screen/Dashboard.dart';
+import 'package:myfirstproject/screens/ButtomNavigationScreen.dart';
 import 'package:myfirstproject/screens/CardScreen.dart';
 import 'package:myfirstproject/screens/ColumnScreen.dart';
 import 'package:myfirstproject/screens/ContainerScreen.dart';
@@ -13,6 +15,7 @@ import 'package:myfirstproject/screens/Listtilescreen.dart';
 import 'package:myfirstproject/screens/Radioarthmetric.dart';
 import 'package:myfirstproject/screens/Register_screen.dart';
 import 'package:myfirstproject/screens/SnackBarScreen.dart';
+import 'package:myfirstproject/screens/StackScreen.dart';
 import 'package:myfirstproject/screens/addition.dart';
 import 'package:myfirstproject/screens/calculator.dart';
 import './screens/Arthmetric.dart';
@@ -41,7 +44,10 @@ void main(List<String> args) {
         '/cardscreen' :(context) =>  const CardScreen(),
          '/gridscreen' :(context) =>  const GridScreen(),
          '/calculator' :(context) => const Calculator(),
-         '/displaytable' :(context) => const DisplayTableScreen()
+         '/displaytable' :(context) => const DisplayTableScreen(),
+         "/stackscreen" : (context) => const StackScreen(),
+         "/buttomnavigation" :(context) => const ButtomNavigationScreen(),
+         "/dashboard" :(context) => const Dashboard(),
       },
     ),
   );
