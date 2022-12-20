@@ -18,11 +18,13 @@ import 'package:myfirstproject/screens/Register_screen.dart';
 import 'package:myfirstproject/screens/SnackBarScreen.dart';
 import 'package:myfirstproject/screens/SplashScreen.dart';
 import 'package:myfirstproject/screens/StackScreen.dart';
+import 'package:myfirstproject/screens/TimeAndDateScreen.dart';
 import 'package:myfirstproject/screens/addition.dart';
 import 'package:myfirstproject/screens/calculator.dart';
 import 'package:myfirstproject/theme/theme_data.dart';
 import './screens/Arthmetric.dart';
 import './screens/interest.dart';
+import './screens/TimeAndDateScreen.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -60,7 +62,8 @@ class MyApp extends StatelessWidget {
         "/stackscreen": (context) => const StackScreen(),
         "/buttomnavigation": (context) => const ButtomNavigationScreen(),
         "/dashboard": (context) => const Dashboard(),
-        "/loginscreen": (context) => const LoginScreen()
+        "/loginscreen": (context) => const LoginScreen(),
+        "/timeanddate": (context) => const TimeAndDateScreen()
       },
     );
   }
