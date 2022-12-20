@@ -77,6 +77,9 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(" Login Page"),
+      ),
       body: SafeArea(
           child: Form(
         key: globalkey,
@@ -89,11 +92,11 @@ class _LoginScreenState extends State<LoginScreen> {
             Positioned(
               top: 140,
               bottom: 350,
-              left: 200,
+              left: 100,
               child: SizedBox(
                 height: 100,
                 width: 100,
-                child: SvgPicture.asset("images/education.svg"),
+                child: SvgPicture.asset("assets/images/education.svg"),
               ),
             ),
             Positioned(

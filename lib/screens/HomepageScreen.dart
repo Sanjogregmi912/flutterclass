@@ -213,6 +213,17 @@ class _HomepageState extends State<Homepage> {
                   },
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                child: ElevatedButton(
+                  child: const Text("Splash screen"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/SplashScreen");
+                  },
+                ),
+              ),
             ],
           ),
         ),

@@ -16,9 +16,11 @@ import 'package:myfirstproject/screens/LoginScreen.dart';
 import 'package:myfirstproject/screens/Radioarthmetric.dart';
 import 'package:myfirstproject/screens/Register_screen.dart';
 import 'package:myfirstproject/screens/SnackBarScreen.dart';
+import 'package:myfirstproject/screens/SplashScreen.dart';
 import 'package:myfirstproject/screens/StackScreen.dart';
 import 'package:myfirstproject/screens/addition.dart';
 import 'package:myfirstproject/screens/calculator.dart';
+import 'package:myfirstproject/theme/theme_data.dart';
 import './screens/Arthmetric.dart';
 import './screens/interest.dart';
 
@@ -34,26 +36,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-        scaffoldBackgroundColor: Colors.red[200],
-        fontFamily: "OpenSans Bold",
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            textStyle: const TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-              fontWeight: FontWeight.w500,
-            ),
-            backgroundColor: Colors.amber,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5),
-            ),
-          ),
-        ),
-      ),
+      theme: getApplicationTheme(),
       routes: {
-        '/': (context) => const Homepage(),
+        '/': (context) => const SplashScreen(),
+        "/homepage": (context) => const Homepage(),
         '/siscreen': (context) => const intrest(),
         '/arthmetricscreen': (context) => const Arthmetric(),
         '/columns': (context) => const ColumnScreen(),
