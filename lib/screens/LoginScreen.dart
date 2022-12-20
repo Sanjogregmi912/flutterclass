@@ -52,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _button(String name) {
     return ElevatedButton(
       style: ButtonStyle(
-        backgroundColor: const MaterialStatePropertyAll(Colors.amber),
+        backgroundColor: const MaterialStatePropertyAll(Colors.green),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18.0),
@@ -65,7 +65,10 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Text(
         name,
         style: const TextStyle(
-            color: Colors.redAccent, fontWeight: FontWeight.bold),
+          color: Colors.redAccent,
+          fontSize: 20,
+          fontFamily: "Montserrat Black",
+        ),
       ),
     );
   }
@@ -84,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: MediaQuery.of(context).size.height,
             ),
             Positioned(
-              top: 80,
+              top: 140,
               bottom: 350,
               left: 200,
               child: SizedBox(
@@ -94,8 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Positioned(
-              top: 280,
-              bottom: 100,
+              bottom: 240,
               left: 100,
               child: SizedBox(
                 height: 100,

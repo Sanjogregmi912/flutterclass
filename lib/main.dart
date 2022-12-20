@@ -23,10 +23,35 @@ import './screens/Arthmetric.dart';
 import './screens/interest.dart';
 
 void main(List<String> args) {
-  runApp(
-    MaterialApp(
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        scaffoldBackgroundColor: Colors.red[200],
+        fontFamily: "OpenSans Bold",
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            textStyle: const TextStyle(
+              fontSize: 18,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
+            backgroundColor: Colors.amber,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+            ),
+          ),
+        ),
+      ),
       routes: {
         '/': (context) => const Homepage(),
         '/siscreen': (context) => const intrest(),
@@ -41,16 +66,16 @@ void main(List<String> args) {
         '/flexiblescreen': (context) => const FlexsibleScreen(),
         '/snackbarscreen': (context) => const SnackBarScreen(),
         '/flexconatiner': (context) => const FlexContainer(),
-        '/displayStudent' :(context) => const DisplayStudent(),
-        '/cardscreen' :(context) =>  const CardScreen(),
-         '/gridscreen' :(context) =>  const GridScreen(),
-         '/calculator' :(context) => const Calculator(),
-         '/displaytable' :(context) => const DisplayTableScreen(),
-         "/stackscreen" : (context) => const StackScreen(),
-         "/buttomnavigation" :(context) => const ButtomNavigationScreen(),
-         "/dashboard" :(context) => const Dashboard(),
-         "/loginscreen" :(context) => const LoginScreen()
+        '/displayStudent': (context) => const DisplayStudent(),
+        '/cardscreen': (context) => const CardScreen(),
+        '/gridscreen': (context) => const GridScreen(),
+        '/calculator': (context) => const Calculator(),
+        '/displaytable': (context) => const DisplayTableScreen(),
+        "/stackscreen": (context) => const StackScreen(),
+        "/buttomnavigation": (context) => const ButtomNavigationScreen(),
+        "/dashboard": (context) => const Dashboard(),
+        "/loginscreen": (context) => const LoginScreen()
       },
-    ),
-  );
+    );
+  }
 }
